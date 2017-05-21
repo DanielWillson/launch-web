@@ -18,16 +18,12 @@ body {
 	width: auto;
 }
 
-
-
 .article {
 	display: inline-block;
 	vertical-align: top;
 	background-size: cover;
 	height: 600px;
 	margin-bottom: 20px;
-	
-
 	position: relative;
 }
 
@@ -66,7 +62,31 @@ body {
 	color: black;
 }
 
-@media screen and (max-width: ____) {
+@media screen and (max-width: 1050px) {
 
+	.one, .two, .three {
+		width: 47.5%;
+		margin-right: 0;
+	}
+
+	.article:nth-child(2n-1) {
+		margin-right: 5%;
+	}
+
+	.article {
+		height: 400px;
+	}
+
+}
+
+@media screen and (max-width: 700px) {
+
+	.one, .two, .three {
+		width: 100%;
+	}
+
+	.article:nth-child(2n-1) {
+		margin-right: 0;
+	}
 
 }
